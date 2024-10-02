@@ -1,0 +1,21 @@
+---
+title: "Life Expectancy and Population"
+---
+
+In this analysis, we will explore the relationship between life expectancy and population using the Gapminder dataset and ggplot.
+
+```{r}
+# Load the necessary packages and data
+library(ggplot2)
+library(gapminder)
+
+# Plot showing Life Expectancy vs Population
+ggplot(gapminder, aes(x = pop, y = lifeExp)) +  
+  geom_point() +
+  labs(
+    title = "Relationship Between Life Expectancy and Population",
+    x = "Population",
+    y = "Life Expectancy"
+  ) +
+  scale_x_log10()  # Log scale for population
+```

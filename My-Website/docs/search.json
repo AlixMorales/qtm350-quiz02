@@ -1,0 +1,37 @@
+[
+  {
+    "objectID": "life-population.html",
+    "href": "life-population.html",
+    "title": "Life Expectancy and Population",
+    "section": "",
+    "text": "In this analysis, we will explore the relationship between life expectancy and population using the Gapminder dataset and ggplot.\n\n# Load the necessary packages and data\nlibrary(ggplot2)\nlibrary(gapminder)\n\n# Plot showing Life Expectancy vs Population\nggplot(gapminder, aes(x = pop, y = lifeExp)) +  \n  geom_point() +\n  labs(\n    title = \"Relationship Between Life Expectancy and Population\",\n    x = \"Population\",\n    y = \"Life Expectancy\"\n  ) +\n  scale_x_log10()  # Log scale for population"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "This is the Index",
+    "section": "",
+    "text": "This is the index where we have the Gapminder dataset. The dataset contains data on all contries from 1998 to 2018 and includes variables for life expectancy and GDP.\nTo learn more: - About - Life Expectancy and GDP per Capita - Life Expectancy and Population - Country Analysis"
+  },
+  {
+    "objectID": "country.html",
+    "href": "country.html",
+    "title": "Country Analysis: Mexico",
+    "section": "",
+    "text": "In this analysis, we will explore the changes in life expectancy, GDP per capita, and population in Mexico over time using the Gapminder dataset, ggplot, and dplyr. The following plot\n\n# Load the necessary packages and data\nlibrary(ggplot2)\nlibrary(gapminder)\nlibrary(dplyr)\n\n\nAttaching package: 'dplyr'\n\n\nThe following objects are masked from 'package:stats':\n\n    filter, lag\n\n\nThe following objects are masked from 'package:base':\n\n    intersect, setdiff, setequal, union\n\n# Filter data for the United States\nmx_data &lt;- gapminder %&gt;%\n  filter(country == \"Mexico\")\n\n\n# plot for life expectancy over time\nggplot(mx_data, aes(x = year, y = lifeExp)) +\n  geom_line(color = \"red\") +\n  labs(\n    title = \"Life Expectancy in Mexico Over Time\",\n    x = \"Year\",\n    y = \"Life Expectancy\")"
+  },
+  {
+    "objectID": "life-gdp.html",
+    "href": "life-gdp.html",
+    "title": "Life Expectancy and GDP per Capita",
+    "section": "",
+    "text": "In this analysis, we will explore the relationship between life expectancy and GDP per capita using the Gapminder dataset and ggplot.\n\n# Loading the Gapminder package and data\nlibrary(ggplot2)\nlibrary(gapminder)\n\n# Create the plot showing Life Expectancy vs GDP per capita\nggplot(gapminder, aes(x = gdpPercap, y = lifeExp)) +  # Add closing parenthesis here\n  geom_point() +\n  scale_x_log10() +  # Log scale for GDP per capita (smooths out plot)\n  labs(\n    title = \"Relationship Between Life Expectancy and GDP per Capita\",\n    x = \"GDP per Capita\",\n    y = \"Life Expectancy\"\n  )"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  }
+]

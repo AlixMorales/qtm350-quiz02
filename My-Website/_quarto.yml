@@ -1,0 +1,28 @@
+project:
+  type: website
+  output-dir: docs 
+  
+
+website:
+  title: "My-Website"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: about.qmd
+        text: About
+      - href: life-gdp.qmd
+        text: Life Exp. and GDP
+      - href: life-population.qmd
+        text: Life Exp. and Population 
+      - href: country.qmd
+        text: Analysis on Mexico  
+
+format:
+  html:
+    theme: slate
+    css: styles.css
+    toc: true
+
+
+

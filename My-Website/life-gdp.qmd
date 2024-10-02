@@ -1,0 +1,22 @@
+---
+title: "Life Expectancy and GDP per Capita"
+---
+
+In this analysis, we will explore the relationship between life expectancy
+and GDP per capita using the Gapminder dataset and ggplot. 
+
+```{r}
+# Loading the Gapminder package and data
+library(ggplot2)
+library(gapminder)
+
+# Create the plot showing Life Expectancy vs GDP per capita
+ggplot(gapminder, aes(x = gdpPercap, y = lifeExp)) +  # Add closing parenthesis here
+  geom_point() +
+  scale_x_log10() +  # Log scale for GDP per capita (smooths out plot)
+  labs(
+    title = "Relationship Between Life Expectancy and GDP per Capita",
+    x = "GDP per Capita",
+    y = "Life Expectancy"
+  )
+```

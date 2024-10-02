@@ -1,0 +1,11 @@
+---
+title: "This is the Index"
+---
+
+This is the index where we have the Gapminder dataset. The dataset contains data on all contries from 1998 to 2018 and includes variables for life expectancy and GDP.
+
+To learn more:
+- [About](about.qmd)
+- [Life Expectancy and GDP per Capita](life-gdp.qmd)
+- [Life Expectancy and Population](life-population.qmd)
+- [Country Analysis](country.qmd)
